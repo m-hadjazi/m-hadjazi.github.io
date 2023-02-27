@@ -1,0 +1,240 @@
+
+/* ----------------------------------------- */
+/* ------------ Header styling ------------ */
+/* imported font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* erase defualt margins/paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* set body style*/
+html, body{
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Header styling */
+#topNavBar{
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  text-align: center;
+}
+
+/* name/logo */
+#topNavBar h1{
+  font-weight: bold;
+}
+
+/* make "Hadjazi" font lighter */
+#topNavBar h1 span{
+  font-weight: lighter;
+}
+
+/* styling the link for name/logo */
+#topNavBar h1 a{
+  text-decoration: none;
+  color: black;
+}
+
+/* navigation menue styling */
+#topNavBar ul{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: 10px;
+}
+
+#topNavBar ul li{
+  padding: 0.5rem;
+  font-size: 0.8rem;
+}
+
+#topNavBar ul li a{
+  text-decoration: none;
+  color: black;
+}
+
+#topNavBar ul li a:hover{
+  color: darkgray;
+}
+
+/* ------------------------------------------------- */
+/* ------------ the categories of the photos on the page ------------ */
+.photo-categories-section {
+	width: auto;
+	margin: 0 auto;
+  padding: 6% 2%;
+  background-color: black;
+}
+
+.p-c-s-grid {
+	margin: 20px 0 0 0;
+	padding: 0;
+	list-style: none;
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+
+.p-c-s-grid:after {
+	clear: both;
+}
+
+.p-c-s-grid:after, .p-c-s-box:before {
+	content: '';
+	display: table;
+}
+
+/* ----- transitions ----- */
+.p-c-s-grid li {
+	width: 328px;
+	height: 328px;
+	display: inline-block;
+	margin: 20px;
+}
+
+.p-c-s-box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease-in-out,
+  -webkit-transform 0.3s ease-in-out;
+	-moz-transition:  0.3s ease-in-out,
+  -moz-transform 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out,
+  transform 0.3s ease-in-out, ;
+}
+
+.p-c-s-box:hover {
+	transform: scale(1.05);
+}
+
+/* ----- add background ----- */
+.p-c-s-img-1 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),
+  /* bottom, image */
+	url(../img/PhotoCategoriesPage/food.jpg);
+  background-size: contain;
+}
+
+.p-c-s-img-2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),
+  /* bottom, image */
+  url(../img/PhotoCategoriesPage/urban-street.jpg);
+  background-size: contain;
+
+}
+
+.p-c-s-img-3 {
+	background: linear-gradient( rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.10)),
+  /* bottom, image */
+	url(../img/PhotoCategoriesPage/portrait.jpg);
+  background-size: contain;
+}
+
+
+.p-c-s-info{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+.p-c-s-info h3 {
+	font-weight: 400;
+	color: #fff;
+	font-size: 42px;
+	margin: 0 30px;
+	padding: 100px 0 0 0;
+	line-height: 1.5;
+}
+
+.p-c-s-info p { 
+	color: #fff;
+	padding: 4px 5px;
+	margin: 0 30px;
+	font-size: 14px;
+	line-height: 2;
+}
+
+
+
+
+/* ----------------- footer styling ----------------- */
+/* ------------ social media links styling ---------- */
+.social-menu {
+    background-color: white;
+  }
+
+  .social-menu ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    padding-bottom: 14px;
+  }
+  .social-menu ul li {
+    list-style: none;
+    margin: 0 10px;
+  }
+  .social-menu ul li .fa {
+    color: #000000;
+    font-size: 25px;
+    line-height: 50px;
+    transition: .5s;
+  }
+  .social-menu ul li .fa:hover {
+    color: #ffffff;
+  }
+  .social-menu ul li a {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    transition: 0.5s;
+    transform: translate(0,0px);
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  }
+  .social-menu ul li a:hover {
+    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+  }
+
+  /* Vimeo hover over color */
+  .social-menu ul li:nth-child(1) a:hover {
+    background-color: #1ab7ea;
+  }
+
+  /* Instagram hover over color */
+  .social-menu ul li:nth-child(2) a:hover {
+    background-color: black;
+  }
+
+  /* Youtube hover over color */
+  .social-menu ul li:nth-child(3) a:hover {
+    background-color: #e62117;
+  }
+
+  /* copyright styling */
+  /* position */
+  .copyright {
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #fff;
+    text-align: center;
+  }
+
+  /* text color */
+  .copyright p{
+      color: black;
+  }
